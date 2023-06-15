@@ -17,6 +17,3 @@ class TestPositionInitWithCoordinates(TestCase):
         testobj = Position(CoordinateX,CoordinateY)
         self.assertEqual(type(testobj.CoordinateX), int)
         self.assertEqual(type(testobj.CoordinateY), int)
-
-
-git
