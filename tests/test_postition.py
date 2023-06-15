@@ -1,25 +1,17 @@
 from unittest import TestCase
 from levelup.position import Position
 
-class TestPositionInitBottomLeftOfMap(TestCase):
-    def test_init(self):
-        CoordinateX = 0
-        CoordinateY = 0
-        testobj = Position(CoordinateX,CoordinateY)
-        self.assertEqual(testobj.CoordinateX, 0)
-        self.assertEqual(testobj.CoordinateY, 0)
-
-class TestPositionInitMiddleOfMap(TestCase):
+class TestPositionInitWithCoordinates(TestCase):
+   
     def test_init(self):
         CoordinateX = 5
         CoordinateY = 5
         testobj = Position(CoordinateX,CoordinateY)
-        self.assertEqual(testobj.CoordinateX, 5)
-        self.assertEqual(testobj.CoordinateY, 5)
+        self.assertEqual(testobj.CoordinateX, CoordinateX)
+        self.assertEqual(testobj.CoordinateY, CoordinateY)
 
 
-class TestPositionInitNonNumberInput(TestCase):
-    def test_init(self):
+    def test_init_wrong(self):
         CoordinateX = "bob"
         CoordinateY = "sue"
         testobj = Position(CoordinateX,CoordinateY)
