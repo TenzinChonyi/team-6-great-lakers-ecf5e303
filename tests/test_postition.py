@@ -19,3 +19,4 @@ class TestPositionInitWithCoordinates(TestCase):
         self.assertEqual(type(testobj.CoordinateY), int)
 
 
+git
