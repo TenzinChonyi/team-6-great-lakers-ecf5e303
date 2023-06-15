@@ -10,11 +10,3 @@ class TestCharacterInitWithName(TestCase):
     def test_default_name_assignment(self):
         testobj = Character("")
         self.assertEqual("Character", testobj.name)
-
-
-#         variable = None
-
-# if variable is not None:
-#     print("Variable is not null")
-# else:
-#     print("Variable is null")
