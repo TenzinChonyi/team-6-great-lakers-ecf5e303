@@ -1,11 +1,11 @@
 class Position:
-    CoordinateX = ""
-    CoordinateY = ""
+    coordinate_X = ""
+    coordinate_Y = ""
 
-    def __init__(self, CoordinateX, CoordinateY):
-       if type(CoordinateX) != int: CoordinateX =0
-       if type(CoordinateY) != int: CoordinateY =0
-       self.CoordinateX = CoordinateX
-       self.CoordinateY = CoordinateY
+    def __init__(self, coordinate_X, coordinate_Y):
+       if type(coordinate_X) != int: coordinate_X =0
+       if type(coordinate_Y) != int: coordinate_Y =0
+       self.coordinate_X = coordinate_X
+       self.coordinate_Y = coordinate_Y
 
 

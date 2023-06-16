@@ -4,16 +4,16 @@ from levelup.position import Position
 class TestPositionInitWithCoordinates(TestCase):
    
     def test_init(self):
-        CoordinateX = 5
-        CoordinateY = 5
-        testobj = Position(CoordinateX,CoordinateY)
-        self.assertEqual(testobj.CoordinateX, CoordinateX)
-        self.assertEqual(testobj.CoordinateY, CoordinateY)
+        coordinate_X = 5
+        coordinate_Y = 5
+        testobj = Position(coordinate_X,coordinate_Y)
+        self.assertEqual(testobj.coordinate_X, coordinate_X)
+        self.assertEqual(testobj.coordinate_Y, coordinate_Y)
 
 
     def test_init_wrong(self):
-        CoordinateX = "bob"
-        CoordinateY = "sue"
-        testobj = Position(CoordinateX,CoordinateY)
-        self.assertEqual(type(testobj.CoordinateX), int)
-        self.assertEqual(type(testobj.CoordinateY), int)
+        coordinate_X = "bob"
+        coordinate_Y = "sue"
+        testobj = Position(coordinate_X,coordinate_Y)
+        self.assertEqual(type(testobj.coordinate_X), int)
+        self.assertEqual(type(testobj.coordinate_Y), int)
