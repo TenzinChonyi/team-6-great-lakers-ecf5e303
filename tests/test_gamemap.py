@@ -16,3 +16,8 @@ class TestMapInitDetails(TestCase):
         map = GameMap()
         position = Position(-2,0)
         self.assertFalse(map.validate_position(position))
+
+    def test_valid_y_coordinate(self):
+        map = GameMap()
+        position = Position(2,9)
+        self.assertTrue(map.validate_position(position))

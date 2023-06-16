@@ -9,3 +9,6 @@ class GameMap:
     def validate_position(self, position):
         if position.coordinate_X > 9 or position.coordinate_X < 0:
             return False
+        elif position.coordinate_Y > 9 or position.coordinate_Y < 0:
+            return False
+        return True
